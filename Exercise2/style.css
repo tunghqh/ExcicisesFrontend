@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.no-flex {
+    align-items: flex-start !important;
+    margin-top: 6px;
+}
+
+#register {
+    width: 40%;
+    padding: 30px;
+    margin-top: 100px;
+    background-color: #f5f5f5;
+
+}
+
+.name-form {
+    color: #db524c;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.col-15 {
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+
+.col-85 {
+    width: 85%;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #b9b9b9;
+}
+
+.label-radio {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.input_text {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+.input_text:focus, .input_mess:focus {
+    outline: none;
+}
+
+#females, #male {
+    accent-color: rgb(59, 63, 59);
+}
+
+.select {
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding-left: 10px;
+    background-color: #fff;
+    color: #c0c0c0;
+}
+/* remove defalt arrow */
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+/* For IE10 */
+select::-ms-expand {
+    display: none;
+}
+
+.select-list {
+    position: relative;
+    width: 25%;
+    margin-right: 20px;
+}
+
+.selecct-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+}
+
+.input_mess {
+    width: 100%;
+    height: 130px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+/* custom checkbox */
+.check_accept {
+    margin-left: 15%;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#accept {
+    visibility: hidden;
+}
+
+.geekmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #c0c0c0;
+    border-radius: 6px;
+}
+
+.check_accept input:checked~.geekmark {
+    background-color: #fff;
+}
+
+.geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check_accept input:checked~.geekmark:after {
+    display: block;
+}
+
+.check_accept .geekmark:after {
+    left: 4px;
+    bottom: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #c0c0c0;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    ;
+}
+
+/*  */
+.form-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn {
+    background-color: #db524c;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    width: 148px;
+    height: 40px;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+    .form-btn {
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .selecct-icon {
+        font-size: 12px;
+        right: 6px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-item {
+        display: block;
+    }
+
+    .col-15 {
+        width: 100%;
+    }
+
+    .col-15-m {
+        width: 15%;
+    }
+
+    .col-85 {
+        width: 100%;
+    }
+
+    .selecct-icon {
+        display: none !important;
+    }
+
+    .form-item-m {
+        display: flex;
+    }
+
+    .label-radio {
+        font-size: 14px;
+    }
+
+    .form-btn {
+        margin-left: 0;
+        margin-top: 4px;
+    }
+
+    .btn {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .col-15 {
+        width: 100%;
+    }
+
+    .col-15-m {
+        width: 15%;
+        margin-right: 8px;
+    }
+
+    .col-85-m {
+        display: flex;
+        width: 85%;
+    }
+
+    .label-radio {
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .check_accept {
+        margin: 0 0 14px 0;
+    }
+}

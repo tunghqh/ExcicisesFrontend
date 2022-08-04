@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.app {
+    background-color: #f9f6ed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.head {
+    margin: 0 300px;
+}
+.head__title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    position: relative;
+}
+.head__title::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 12px;
+    height: 2px;
+    width: calc(100% - 22px);
+    background-color: #010000;
+}
+.title__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.title__content-item {
+    aspect-ratio: 1 / 1;
+    width: 24%;
+    /* height: 283px; */
+    background-color: #d9e8fb;
+    margin: 20px 0.5%;
+}
+
+.heading1 {
+    background-color: #fff;
+    padding: 20px 300px;
+    border-top: 1px solid #010000;
+    border-bottom: 1px solid #010000;
+    display: flex;
+    justify-content: space-between;
+}
+.heading1__text{
+    width: 48%;
+}
+.heading1__text h2 {
+    font-size: 30px;
+}
+.heading1__text p {
+    margin-top: 26px;
+}
+
+.heading2 {
+    margin: 0 300px;
+}
+.heading1__content{
+    width: 48%;
+    height: 300px;
+    background-color: #d9e8fb;
+    margin-right: 30px;
+}
+
+.heading2__content {
+    width: 48%;
+    height: 300px;
+    margin-right: 20px;
+    background-color: #d9e8fb;
+    float: left;
+}
+.heading2__text h2 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+.heading2__text p {
+    margin-top: 26px;
+    margin-bottom: 6px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 300px;
+    margin-bottom: 100px;
+    background: #fff;
+    border-top: 1px solid #010000;
+    border-bottom: 1px solid #010000;
+    clear: left;
+}
+.bottom__item{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 48%;
+}
+.item__content {
+    width: 300px;
+    height: 104px;
+    margin-right: 20px;
+    background-color: #d9e8fb;
+    border: 1px solid #010000;
+}
+.item__title {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
